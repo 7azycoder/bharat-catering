@@ -16,15 +16,15 @@ if(Input::exists()){
 
     $db = DB::getInstance();
     $db->insert('bookings',array(
-                             'reference' =>$reference,     
+                             'reference' =>$reference,
                              'date' => $date ,
-                             'first' => $first,    
+                             'first' => $first,
                              'last' => $last,
                              'address'=> $address,
                              'contact' => $contact,
                              'email' => $email,
                              'from' =>$from,
-                             'to' => $to,        
+                             'to' => $to,
                              'venue' => $venue
                     ));
     Redirect::to('items.php');
@@ -74,7 +74,7 @@ else {
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Bharat Catering</h1>
+        <h1 class="header center white teal-text text-lighten-2">Bharat Catering</h1>
         <div class="row center">
           <h3 class="header col s12  white red-text text-lighten-1">" We serve our best quality without any compromise. "</h3>
         </div>
@@ -85,17 +85,17 @@ else {
 
       </div>
     </div>
-    <div class="parallax"><img src="home.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="catering.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
-  
+
   <div class="container">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
-         
+
           <h3>Enter Booking Details</h3>
           <div class="row">
                       <form class="col s12" method="post" action="index.php">
@@ -127,7 +127,7 @@ else {
                             <textarea id="address" name="address" for="address" class="materialize-textarea" length="100"></textarea>
                             <label for="address">Address</label>
                           </div>
-                          
+
                           <div class="input-field col s12 m6 l6">
                             <i class="material-icons prefix">phone</i>
                             <input id="contact" name="contact" for="contact" type="tel" class="validate" length="12">
@@ -148,7 +148,7 @@ else {
                             <input id="to" name="to" for="to" type="text" class="validate">
                             <label for="to">To</label>
                           </div>
-                         
+
                           <div class="input-field col s12 m12 l12">
                             <i class="material-icons prefix">business</i>
                             <textarea id="venue" name="venue" for="venue" class="materialize-textarea" length="100"></textarea>
@@ -169,7 +169,7 @@ else {
   </div>
 
 
- 
+
  <!-- footer starts here -->
   <footer class="page-footer teal">
     <div class="container">

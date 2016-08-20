@@ -1,9 +1,7 @@
 <?php
 
-require_once 'core/init.php';
- 
+require_once 'core/init.php'; 
 $db = DB::getInstance();
-  
 
 ?>
 
@@ -68,7 +66,7 @@ $db = DB::getInstance();
 
       <div class="row">
         <div class="col s12">
-         
+
           <h3 class="center">Booking Details</h3>
                 <div class="row">
                   <div class="col s12 m12">
@@ -76,24 +74,24 @@ $db = DB::getInstance();
                       <div class="row">
                             <div class="col s12 m6">
                               <?php
-                                      $result = $db->get('bookings',array('test', '=', '0'));         
+                                      $result = $db->get('bookings',array('test', '=', '0'));
                                       $count =  $result->count();
-                                                        
+
                                       $reference   =  $result->results()[$count-1]->reference;
                                       $first =  $result->results()[$count-1]->first;
-                                      $last =  $result->results()[$count-1]->last;                            
-                                      $date =  $result->results()[$count-1]->date; 
-                                      $email =  $result->results()[$count-1]->email; 
-                                      $contact =  $result->results()[$count-1]->contact; 
-                                      $address =  $result->results()[$count-1]->address; 
-                                      $venue =  $result->results()[$count-1]->venue; 
-                                      $from =  $result->results()[$count-1]->from; 
-                                      $to =  $result->results()[$count-1]->to; 
-                                                                                                      
+                                      $last =  $result->results()[$count-1]->last;
+                                      $date =  $result->results()[$count-1]->date;
+                                      $email =  $result->results()[$count-1]->email;
+                                      $contact =  $result->results()[$count-1]->contact;
+                                      $address =  $result->results()[$count-1]->address;
+                                      $venue =  $result->results()[$count-1]->venue;
+                                      $from =  $result->results()[$count-1]->from;
+                                      $to =  $result->results()[$count-1]->to;
+
                                 ?>
-                                
-                        
-                              <p>Reference No&nbsp: <?php echo $reference; ?><br>Name  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp : <?php echo $first . ' ' . $last; ?> <br>Contact  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp : <?php echo $contact; ?> <br>From  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp  : <?php echo $from; ?> <br>Venue  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp: <?php echo $venue; ?> 
+
+
+                              <p>Reference No&nbsp: <?php echo $reference; ?><br>Name  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp : <?php echo $first . ' ' . $last; ?> <br>Contact  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp : <?php echo $contact; ?> <br>From  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp  : <?php echo $from; ?> <br>Venue  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp: <?php echo $venue; ?>
                               </p>
                             </div>
                             <div class="col s12 m6">
@@ -103,7 +101,7 @@ $db = DB::getInstance();
                       </div>
                     </div>
                   </div>
-                 
+
                 </div>
         </div>
       </div>
@@ -142,7 +140,7 @@ $db = DB::getInstance();
   </div>
 
 
-  
+
  <!-- footer starts here -->
   <footer class="page-footer teal">
     <div class="container">
